@@ -8,7 +8,7 @@ Although STR is an important type of genetic markers which has the potential in 
 High coverage (30x) NGS data of 122 KHV individuals from 1000 Genome Project on high coverage [GRCh38](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa) are available on [IGSR](https://www.internationalgenome.org/data-portal/population/KHV). The available data were already sorted and indexed by SAMtools. We perform GangSTR on 122 samples using STR reference panel available on GangSTR github.
 
 # Quality control
-VCF files from GangSTR output was merged and pass through dumpSTR to filter poor quality calls with `DP < 25` and `Q score < 0.9`. Locus with minor allele frequency < 1% were also removed with R script `MAF.R`
+VCF files from GangSTR output was merged and pass through dumpSTR to filter poor quality calls with `DP < 25` and `Q score < 0.9` (see `Supplementary Data.tab`). Locus with minor allele frequency < 1% were also removed with R script `MAF.R`
 
 #Analysis
 After multiple analysis calculating zygosity, Hardy-Weinberg equilibrium, Polymorphism Information Content, GC content, we successfully generated a novel high polymorphic STR panel in Vietnamese population. This initial development provided an open-access STR panel for subsequent confirmation in wet lab.
